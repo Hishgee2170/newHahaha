@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<style>
-    body{
-        background-color: gray;
-    }
-    .white{
-        color: white;
-    }
-    .center{
-        align-items: center;
-        justify-content: center;
-    }
-    a{
-        font-size: large;
-        font-family: initial;
-    }
-</style>
-</head>
-<body >
-    <div class="center">    
-        <a class="white" href="https://www.youtube.com/watch?v=mrrWigHS8oI">Gegee</a>
-</div>
-</body>
+  <head>
+    <title>Gay Pizda</title>
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/originals/26/4a/e0/264ae00f419a5c2508494574e815f23b.jpg"
+    />
+    <style>
+        #Mover{
+            background-color: blue;
+            display: flex;
+            position: absolute;
+            
+        }
+        button{
+            background-color: aqua;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="Mover" class="blue">
+      <h1>Chi gomo ymu ?</h1>
+      <button onmouseover="changeColor()" class="mybutton">No</button>
+      <button class="mybutton" onclick="alert('medsima sda haha')">yes</button>
+    </div>
+    <script>
+        const myButtonOne=document.getElementsByClassName("myButton")[0];
+        let moveree=document.getElementById("Mover");
+        function changeColor(){
+        let i=Math.floor(Math.random() * 1000);
+        let j=Math.floor(Math.random() * 1000);
+        moveree.style.left=`${i}px`;
+        moveree.style.top=`${j}px`
+        }
+        
+    </script>
+  </body>
 </html>
